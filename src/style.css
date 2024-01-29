@@ -1,0 +1,165 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    user-select: none;
+    background-color: #2C2C2E;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url('https://i.postimg.cc/wM2JGd6Q/v-gif-ezgif-com-video-to-gif-converter.gif'); /* Banner que fica ao fundo do perfil */
+    background-size: cover;
+    filter: blur(3px);
+}
+
+#profile-container {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 320px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+#banner {
+    /* Caso você não tenha nitro, você pode adicionar um baner mesmo assim:
+    background-image: url('caminho para o seu banner');*/
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+#profile-picture {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #363739;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-top: -75px;
+}
+
+#name {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#tagline {
+    font-size: 12px;
+    color: #808080;
+    font-weight: bold;
+}
+
+.online {
+    background-color: #43b581;
+}
+
+.offline {
+    background-color: #747f8e;
+}
+
+.idle {
+    background-color: #faa61a;
+}
+
+.dnd {
+    background-color: #f04747;
+}
+
+.discord-status {
+    width: 22px;
+    height: 22px;
+    box-shadow: 0px 0px 32px -6px rgb(0 0 0);
+    position: absolute;
+    margin: 16px 16px 16px 16px;
+    top: 160px;
+    right: 20px;
+    left: 180px; 
+    opacity: 0.8;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#badges {
+    margin-top: 10px;
+}
+
+.badge {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 0 5px;
+}
+
+#icons-container {
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    margin-top: 90px;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    margin: 0 5px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge-info {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(54, 55, 57, 0.8);
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.badge-container:hover .badge-info {
+    opacity: 1;
+}
